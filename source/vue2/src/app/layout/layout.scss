@@ -1,0 +1,61 @@
+.layout-container {
+}
+
+// Default
+.layout-container.layout-default {
+  .layout-header {
+
+  }
+  .layout-main {
+    padding-top: 56px;
+    .layout-sidebar {
+      float: left;
+      background: $dark;
+      overflow-y: hidden;
+      &.sidebar-container {
+        position: relative;
+
+        width: 180px;
+        height: calc(100vh - 56px);
+      }
+    }
+
+    .layout-body {
+      float: left;
+      overflow-y: hidden;
+      &.body-container {
+        position: relative;
+        width: calc(100% - 180px);
+        height: calc(100vh - 56px);
+      }
+    }
+  }
+
+  .layout-footer {
+
+  }
+}
+
+// Screen
+.layout-container.layout-screen {
+  .layout-header {
+
+  }
+
+  .layout-main {
+    padding-top: 56px;
+    .layout-body {
+      border: 1px solid;
+      overflow-y: hidden;
+      &.body-container {
+        position: relative;
+        height: calc(100vh - 56px - 160px);
+      }
+    }
+  }
+
+  .layout-footer {
+    border: 1px solid;
+    height: 160px;
+  }
+}
